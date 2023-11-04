@@ -1,0 +1,10 @@
+{
+    "python.analysis.addImport.exactMatchOnly": true,
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.enableSyncServer": true,
+    "python.analysis.fixAll": [
+        
+    ]
+}

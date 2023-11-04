@@ -6,5 +6,8 @@
     "python.analysis.enableSyncServer": true,
     "python.analysis.fixAll": [
         
-    ]
+    ],
+    "python.globalModuleInstallation": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.testing.pytestEnabled": true
 }

@@ -8,15 +8,15 @@ def on_error(error_message):
 #on_message, on_open, on_close and on_error is a call back function we will provide the response for the subscribe method.
 # access_token is an optional one. If you have barrier token then pass and consumer_key and consumer_secret will be optional.
 # environment by default uat you can pass prod to connect to live server
-client = NeoAPI(consumer_key="", consumer_secret="", 
-                environment='uat', on_message=on_message, on_error=on_error, on_close=None, on_open=None)
+client = NeoAPI(consumer_key="wbMFt2gIs3vpld8UmyxK9AzfUika", consumer_secret="XUOfDmiktXGeeSNapthRgLDQlMEa", 
+                environment='prod', on_message=on_message, on_error=on_error, on_close=None, on_open=None)
 
 # Initiate login by passing any of the combinations mobilenumber & password (or) pan & password (or) userid & password
 # Also this will generate the OTP to complete 2FA
-client.login(mobilenumber="+919999999999", password="XXXX")
-
+client.login(mobilenumber="+919967341483", password="Adron@09")
+MPIN = "201103"
 # Complete login and generate session token
-client.session_2fa(OTP="")
+client.session_2fa(OTP=MPIN)
 
 # Once 2FA has you can place the order by using below function
 client.place_order(exchange_segment='', product='', price='', order_type='', quantity=12, validity='', trading_symbol='',

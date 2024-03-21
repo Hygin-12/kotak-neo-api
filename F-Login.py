@@ -24,8 +24,8 @@ while True:
      user_input = input ('select: Place_Order (PO)|Modify_Order(MO)|Cancel_Order(CO)|Order_Book(OB)|Quote(O)')
 
 # Once 2FA has you can place the order by using below function
-if user_input.upper == 'PO':
-   client.place_order(exchange_segment='', product='', price='', order_type='', quantity=12, validity='', trading_symbol='',
+     if user_input.upper == 'PO':
+client.place_order(exchange_segment='', product='', price='', order_type='', quantity=12, validity='', trading_symbol='',
                     transaction_type='', amo="NO", disclosed_quantity="0", market_protection="0", pf="N",
                     trigger_price="0", tag=None)
 						

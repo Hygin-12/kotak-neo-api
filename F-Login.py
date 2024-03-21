@@ -30,50 +30,61 @@ if user_input.upper == 'PO':
                     trigger_price="0", tag=None)
 						
 # Modify an order
+elif user_input.upper == 'MO':
 client.modify_order(order_id = "", price = 0, quantity = 1, disclosed_quantity = 0, trigger_price = 0, validity = "GFD")
 
 # Cancel an order
+elif user_input.upper == 'CO':
 client.cancel_order(order_id = "")
 
 # This is delay type. if order id along with isVerify as True will be passed then check the status of the given order id and then proceed to further
 client.cancel_order(order_id = "", isVerify=True)
 
 # Get Order Book
+elif user_input.upper == 'OB':
 client.order_report()
 
 # Get Order History
+elif user_input.upper == 'OH':
 client.order_history(order_id = "")
 
 # Get Trade Book
+elif user_input.upper == 'TB':
 client.trade_report()
 
 # Get Detailed Trade Report for specific order id. 
+elif user_input.upper == 'TRS':
 client.trade_report(order_id = "")
 
 # Get Positions
+elif user_input.upper == 'P':
 client.positions()
 
 # Get Portfolio Holdings
+elif user_input.upper == 'H':
 client.holdings()
 
 # Get Limits
-client.limits(segment="", exchange="", product="")
-
-# Get Margin required for Equity orders. 
+elif user_input.upper == 'L':
+client.limits(segment="", elif user_input.upper == 'MO':M':
 client.margin_required(exchange_segment = "", price = "", order_type= "", product = "",   quantity = "", instrument_token = "",  transaction_type = "")
 
 # Get Scrip Master CSV file
+elif user_input.upper == 'SM':
 client.scrip_master()
 
 # Get Scrip Master CSV file for specific Exchange Segment. 
+elif user_input.upper == 'SMS':
 client.scrip_master(exchange_segment = "")
 
 # Search for the Scrip details from Scrip master file
 # exchange_segment is mandatory option to pass and remaining parameters are optional
+
 client.search_scrip(exchange_segment="cde_fo", symbol="", expiry="", option_type="",
                     strike_price="")
 
 # Get Quote details. 
+elif user_input.upper == 'Q':
 instrument_tokens = [{"instrument_token": "", "exchange_segment": ""},
     {"instrument_token": "", "exchange_segment": ""},
     {"instrument_token": "", "exchange_segment": ""},

@@ -85,7 +85,7 @@ client.search_scrip(exchange_segment="cde_fo", symbol="", expiry="", option_type
 
 # Get Quote details. 
 elif user_input.upper == 'Q':
-instrument_tokens = [{"instrument_token": "", "exchange_segment": ""},
+instrument_tokens = [{"instrument_token": "6531", "exchange_segment": "nse_cm"},
     {"instrument_token": "", "exchange_segment": ""},
     {"instrument_token": "", "exchange_segment": ""},
     {"instrument_token": "", "exchange_segment": ""}]

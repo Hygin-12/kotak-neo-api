@@ -32,8 +32,8 @@ def on_message(message):
 def on_error(error_message):
     print(error_message)
 
-consumerkey = "wbMFt2gIs3vpld8UmyxK9Az"
-consumersecret ="XUOfDmiktXGeeSNapthRgL"    
+consumerkey = ""
+consumersecret =""    
 #on_message, on_open, on_close and on_error is a call back function we will provide the response for the subscribe method.
 # access_token is an optional one. If you have barrier token then pass and consumer_key and consumer_secret will be optional.
 # environment by default uat you can pass prod to connect to live server
@@ -42,9 +42,9 @@ client = NeoAPI(consumer_key=consumerkey, consumer_secret=consumersecret,
 
 # Initiate login by passing any of the combinations mobilenumber & password (or) pan & password (or) userid & password
 # Also this will generate the OTP to complete 2FA
-client.login(mobilenumber="+919967341483", password="Adron@1903")
+client.login(mobilenumber="+", password="")
 
-MPIN="201103"
+MPIN=""
 # Complete login and generate session token
 client.session_2fa(OTP=MPIN)
 

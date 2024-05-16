@@ -1,7 +1,7 @@
 #############################################################################
 #                               WebSocket URLs
 #############################################################################
-WEBSOCKET_URL = "wss://lhsm.kotaksecurities.com"
+WEBSOCKET_URL = "wss://mlhsm.kotaksecurities.com"
 
 #############################################################################
 #                               UAT BASE URLs
@@ -14,3 +14,8 @@ PROD_BASE_URL = "https://gw-napi.kotaksecurities.com/"
 #############################################################################
 SESSION_UAT_BASE_URL = "https://nsbxapi.kotaksecurities.com/"
 SESSION_PROD_BASE_URL = "https://napi.kotaksecurities.com/"
+
+#############################################################################
+#                               ORDER_FEED  URL
+#############################################################################
+ORDER_FEED_URL = "wss://mlhsi.kotaksecurities.com/realtime?sId={server_id}"

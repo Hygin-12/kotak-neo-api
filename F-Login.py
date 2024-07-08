@@ -39,19 +39,8 @@ def handle_quote(quote):
             # Only write the time and ltp for already written tokens
             writer.writerow([current_time, ltp])
 
-# Initialize the NeoAPI client
-consumerkey = "wbMFt2gIs3vpld8UmyxK9AzfUika"
-consumersecret = "XUOfDmiktXGeeSNapthRgLDQlMEa"
-client = NeoAPI(consumer_key=consumerkey, consumer_secret=consumersecret, 
-                environment='prod', on_message=handle_quote, on_error=None, on_close=None, on_open=None)
 
-# Initiate login by passing any of the combinations mobilenumber & password (or) pan & password (or) userid & password
-# Also this will generate the OTP to complete 2FA
-client.login(mobilenumber="+919967341483", password="Adron@1903")
 
-MPIN="201103"
-# Complete login and generate session token
-client.session_2fa(OTP=MPIN)
 
 # Save the response to a text file
 #with open("data.txt", "w") as file:
